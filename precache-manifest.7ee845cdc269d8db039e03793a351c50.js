@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1f6e5ed66359af616a9",
+    "revision": "3d92f5944336ca71705f",
     "url": "/bl3-notebook/css/app.df18db39.css"
   },
   {
-    "revision": "af330c7f9377d32813c7",
-    "url": "/bl3-notebook/css/client-form.5f3dc011.css"
+    "revision": "ba4379de6cebe99dc3fe",
+    "url": "/bl3-notebook/css/client-form.4f7286c0.css"
   },
   {
     "revision": "42388a784f8a1327f20a",
@@ -52,20 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bl3-notebook/favicon.png"
   },
   {
-    "revision": "ca1b8d50de8b231f2c82a0d561131521",
+    "revision": "5600bf045bc5223f3b2f05f13b059990",
     "url": "/bl3-notebook/index.html"
   },
   {
-    "revision": "b1f6e5ed66359af616a9",
-    "url": "/bl3-notebook/js/app.719e96ac.js"
+    "revision": "3d92f5944336ca71705f",
+    "url": "/bl3-notebook/js/app.30680a77.js"
   },
   {
     "revision": "4ed765615d19ad4521a0",
     "url": "/bl3-notebook/js/chunk-vendors.4e7d82f5.js"
   },
   {
-    "revision": "af330c7f9377d32813c7",
-    "url": "/bl3-notebook/js/client-form.b568a220.js"
+    "revision": "ba4379de6cebe99dc3fe",
+    "url": "/bl3-notebook/js/client-form.dc8806cc.js"
   },
   {
     "revision": "42388a784f8a1327f20a",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bl3-notebook/precache-manifest.ec018fbd96d18da82c75fdf358acea70.js"
+  "/bl3-notebook/precache-manifest.7ee845cdc269d8db039e03793a351c50.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bl3-notebook"});
