@@ -28,12 +28,12 @@ export default {
           {
             to: '/',
             label: '武器 Weapon',
-            icon: 'table'
+            icon: 'pistol'
           },
           {
             to: '/grenade-tables',
             label: '手雷 Grenade',
-            icon: 'square-edit-outline'
+            icon: 'decagram-outline'
           },
           {
             to: '/shield-tables',
@@ -43,7 +43,7 @@ export default {
           {
             to: '/artifact-tables',
             label: '神器 Artifact',
-            icon: 'account-circle'
+            icon: 'diamond-stone'
           }
         ],
         'About',
