@@ -14,7 +14,7 @@
       <p class="title is-4">工具</p>
       <ul class="content">
         <li>Vue 2 和 Buefy 框架</li>
-        <li><a href="justboil.me">Admin Null</a></li>
+        <li><a href="https://justboil.me">Admin Null</a></li>
       </ul>
     </section>
   </div>
