@@ -23,63 +23,34 @@ export default {
   computed: {
     menu () {
       return [
-        'General',
+        'Red Text',
         [
           {
             to: '/',
-            icon: 'desktop-mac',
-            label: 'Dashboard'
-          }
-        ],
-        'Examples',
-        [
-          {
-            action: 'dark-mode-toggle',
-            label: 'Dark / White',
-            icon: 'weather-night'
+            label: '武器 Weapon',
+            icon: 'table'
           },
           {
-            to: '/tables',
-            label: 'Tables',
-            icon: 'table',
-            updateMark: true
-          },
-          {
-            to: '/forms',
-            label: 'Forms',
+            to: '/grenade-tables',
+            label: '手雷 Grenade',
             icon: 'square-edit-outline'
           },
           {
-            to: '/profile',
-            label: 'Profile',
-            icon: 'account-circle'
+            to: '/shield-tables',
+            label: '护盾 Shield',
+            icon: 'shield'
           },
           {
-            label: 'Submenus',
-            subLabel: 'Submenus Example',
-            icon: 'view-list',
-            menu: [
-              {
-                href: '#void',
-                label: 'Sub-item One'
-              },
-              {
-                href: '#void',
-                label: 'Sub-item Two'
-              }
-            ]
+            to: '/artifact-tables',
+            label: '神器 Artifact',
+            icon: 'account-circle'
           }
         ],
         'About',
         [
           {
-            href: 'https://admin-null.justboil.me',
-            label: 'Premium Demo',
-            icon: 'credit-card'
-          },
-          {
-            href: 'https://justboil.me/bulma-admin-template/null',
-            label: 'About',
+            to: '/about',
+            label: '关于',
             icon: 'help-circle'
           }
         ]

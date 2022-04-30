@@ -1,53 +1,61 @@
 <template>
   <div>
-    <title-bar :title-stack="titleStack"/>
-    <hero-bar :has-right-visible="false">
-      Dashboard
-    </hero-bar>
-    <section class="section is-main-section">
-      <tiles>
-        <card-widget class="tile is-child" type="is-primary" icon="account-multiple" :number="512" label="Clients"/>
-        <card-widget class="tile is-child" type="is-info" icon="cart-outline" :number="7770" prefix="$" label="Sales"/>
-        <card-widget class="tile is-child" type="is-success" icon="chart-timeline-variant" :number="256" suffix="%" label="Performance"/>
-      </tiles>
-
-      <card-component title="Performance" @header-icon-click="fillChartData" icon="finance" header-icon="reload">
-        <div v-if="defaultChart.chartData" class="chart-area">
-          <line-chart style="height: 100%"
-                      ref="bigChart"
-                      chart-id="big-line-chart"
-                      :chart-data="defaultChart.chartData"
-                      :extra-options="defaultChart.extraOptions">
-          </line-chart>
-        </div>
-      </card-component>
-
-      <card-component title="Clients" class="has-table has-mobile-sort-spaced">
-        <clients-table-sample :data-url="`${$router.options.base}data-sources/clients.json`"/>
-      </card-component>
+    <title-bar :title-stack="titleStack" />
+    <section class="section">
+      <p class="title is-4">数据来源</p>
+      <ul class="content">
+        <li>
+          borderlands吧MrZsir大佬的<a
+            href="http://c.tieba.baidu.com/p/7679171563?fr=good"
+            >这篇帖子</a
+          >
+        </li>
+      </ul>
+      <p class="title is-4">工具</p>
+      <ul class="content">
+        <li>Vue 2 和 Buefy 框架</li>
+        <li><a href="justboil.me">Admin Null</a></li>
+      </ul>
     </section>
   </div>
 </template>
 
+<style scoped>
+.title {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.title.is-4 {
+  font-size: 1.5rem;
+}
+
+ul.content {
+    list-style: disc outside;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+li {
+    margin: 0em;
+    font-weight: 400;
+}
+
+li+li {
+    margin-top: .25em;
+}
+
+</style>
+
 <script>
 import * as chartConfig from '@/components/Charts/chart.config'
 import TitleBar from '@/components/TitleBar'
-import HeroBar from '@/components/HeroBar'
-import Tiles from '@/components/Tiles'
-import CardWidget from '@/components/CardWidget'
-import CardComponent from '@/components/CardComponent'
-import LineChart from '@/components/Charts/LineChart'
-import ClientsTableSample from '@/components/ClientsTableSample'
 
 export default {
   name: 'home',
   components: {
-    ClientsTableSample,
-    LineChart,
-    CardComponent,
-    CardWidget,
-    Tiles,
-    HeroBar,
     TitleBar
   },
   data () {
@@ -60,10 +68,7 @@ export default {
   },
   computed: {
     titleStack () {
-      return [
-        'Admin',
-        'Dashboard'
-      ]
+      return ['~', '关于']
     }
   },
   mounted () {

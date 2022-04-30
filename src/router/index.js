@@ -1,63 +1,48 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    // Document title tag
-    // We combine it with defaultDocumentTitle set in `src/main.js` on router.afterEach hook
     meta: {
-      title: 'Dashboard'
+      title: '武器红字'
     },
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'weapon-tables',
+    component: () => import(/* webpackChunkName: "tables" */ '../views/WeaponTables.vue')
   },
   {
     meta: {
-      title: 'Tables'
+      title: '手雷红字'
     },
-    path: '/tables',
-    name: 'tables',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "tables" */ '../views/Tables.vue')
+    path: '/grenade-tables',
+    name: 'grenade-tables',
+    component: () => import(/* webpackChunkName: "forms" */ '../views/GrenadeTables.vue')
   },
   {
     meta: {
-      title: 'Forms'
+      title: '护盾红字'
     },
-    path: '/forms',
-    name: 'forms',
-    component: () => import(/* webpackChunkName: "forms" */ '../views/Forms.vue')
+    path: '/shield-tables',
+    name: 'shield-tables',
+    component: () => import(/* webpackChunkName: "profile" */ '../views/ShieldTables.vue')
   },
   {
     meta: {
-      title: 'Profile'
+      title: '神器红字'
     },
-    path: '/profile',
-    name: 'profile',
-    component: () => import(/* webpackChunkName: "profile" */ '../views/Profile.vue')
+    path: '/artifact-tables',
+    name: 'artifact-tables',
+    component: () => import(/* webpackChunkName: "profile" */ '../views/ArtifactTables.vue')
   },
   {
     meta: {
-      title: 'New client'
+      title: 'About'
     },
-    path: '/client/new',
-    name: 'client.new',
-    component: () => import(/* webpackChunkName: "client-form" */ '../views/ClientForm.vue')
-  },
-  {
-    meta: {
-      title: 'Edit client'
-    },
-    path: '/client/:id',
-    name: 'client.edit',
-    component: () => import(/* webpackChunkName: "client-form" */ '../views/ClientForm.vue'),
-    props: true
+    path: '/about',
+    name: 'about',
+    component: () => import(/* webpackChunkName: "client-form" */ '../views/About.vue')
   }
 ]
 

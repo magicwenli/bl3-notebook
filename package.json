@@ -1,6 +1,6 @@
 {
-  "name": "admin-null-vue-bulma-dashboard",
-  "version": "1.4.1",
+  "name": "bl3-notebook",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
