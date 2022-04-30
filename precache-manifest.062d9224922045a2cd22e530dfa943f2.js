@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "001a8dec53d1331e6731",
+    "revision": "ee2650fe904d145875e6",
     "url": "/bl3-notebook/css/app.df18db39.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bl3-notebook/css/tables.16fe70a6.css"
   },
   {
-    "revision": "a61473d62b8e4c7aadd56b723a2bce7d",
+    "revision": "7c0b4e196e56cbaf9c5d83207a32a8da",
     "url": "/bl3-notebook/index.html"
   },
   {
-    "revision": "001a8dec53d1331e6731",
-    "url": "/bl3-notebook/js/app-legacy.e8a421ff.js"
+    "revision": "ee2650fe904d145875e6",
+    "url": "/bl3-notebook/js/app-legacy.4669af9b.js"
   },
   {
     "revision": "75c3e8b448fb6b3352f7",
