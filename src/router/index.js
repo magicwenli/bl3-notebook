@@ -49,6 +49,7 @@ const routes = [
 const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
+  mode: 'history',
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
